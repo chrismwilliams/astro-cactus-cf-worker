@@ -25,6 +25,7 @@ export default defineConfig({
 	site: siteConfig.url,
 	adapter: cloudflare({
 		imageService: "compile",
+		prerenderEnvironment: "node",
 	}),
 	image: {
 		domains: ["webmention.io"],
