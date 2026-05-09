@@ -1,8 +1,15 @@
 {
 	"name": "astro-cactus-cf-worker",
+	"main": "@astrojs/cloudflare/entrypoints/server",
 	// Set this to today's date
 	"compatibility_date": "2026-05-08",
+	"compatibility_flags": ["nodejs_compat"],
 	"assets": {
+		"binding": "ASSETS",
 		"directory": "./dist"
-	}
+	},
+	"observability": {
+		"enabled": true
+	},
+	"not_found_handling": "404-page"
 }

@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import cloudflare from "@astrojs/cloudflare";
 // Rehype plugins
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import mdx from "@astrojs/mdx";
@@ -22,6 +23,7 @@ import { expressiveCodeOptions, siteConfig } from "./src/site.config";
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.url,
+	adapter: cloudflare(),
 	image: {
 		domains: ["webmention.io"],
 	},
