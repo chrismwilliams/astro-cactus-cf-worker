@@ -1,0 +1,8 @@
+{
+	"name": "astro-cactus-cf-worker",
+	// Set this to today's date
+	"compatibility_date": "2026-05-08",
+	"assets": {
+		"directory": "./dist"
+	}
+}
