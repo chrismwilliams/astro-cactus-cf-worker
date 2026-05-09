@@ -23,10 +23,7 @@ import { expressiveCodeOptions, siteConfig } from "./src/site.config";
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.url,
-	adapter: cloudflare({
-		imageService: "compile",
-		prerenderEnvironment: "node",
-	}),
+	adapter: cloudflare(),
 	image: {
 		domains: ["webmention.io"],
 	},
